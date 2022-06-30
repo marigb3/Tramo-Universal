@@ -399,15 +399,13 @@ footer{
 i {
          font-size: 35px;
          padding-left: 60px;
+         letter-spacing: 30px;
          display: flex;
          flex-direction: row;
          justify-content: center;
          align-items: center;
 }
 
-i a{
-  letter-spacing: 30px;
-}
 
 .pie-pagina p{
   font-family: 'Nunito','Arial' sans-serif;
