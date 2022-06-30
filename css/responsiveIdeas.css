@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*
+-----------------------
+Sitio: Tramo Universal
+Creadora: Mariela González 
+Actualizada: 22-junio-2022 8:24am
+Actualizado por: Mariela González
+------------------------
+*/
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-ro: span 2;
+}
+
+@media screen and (max-width: 1024px){
+
+	.image-grid {
+		--nums-cols: 2;
+		--row-height: 200px;
+	}
+}

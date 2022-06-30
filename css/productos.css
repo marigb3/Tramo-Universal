@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/*****Tipografía********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+* { 
+  margin: 0;
+  box-sizing: border-box; 
+  padding: 0; 
+}
+a, ul, li, input{
+	text-decoration: none;
+	list-style: none;
+	color: black;
+	border: none;
+ }
+
+ h2{
+   font-family: 'Nunito' sans-serif;
+   
+ }
+
+body {
+  background-color: white;
+ 
+
+}
+
+#container{
+    max-width: 1440px;
+    width: 360px;
+   overflow: hidden;
+}
+
+/* Navbar Mobile */
+.navbarMobile {
+  width: 100%;
+}
+.navbarMobile a {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  color: white;
+}
+.navContainer {
+  width: 100%;
+  margin: auto;
+  display: block;
+  position: relative;
+  height: 60px;
+}
+#chk {
+  display: none;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 40px;
+  right: 55px;
+  z-index: 100;
+}
+.logoContainer {
+  display: block;
+  width: 92px;
+  height: 125px;
+}
+.logotipo {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 92px;
+  height: 125px;
+}
+.line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #627B23;
+}
+.line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in;
+}
+.line2 {
+  transition: transform 0.2s ease-in;
+}
+.line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in;
+}
+.menu-items {
+  position: absolute;
+  top: 0;
+  background-color: #627B23;
+  color: white;
+  display: flex;
+	gap: 10px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  transition: transform 0.5s ease-in;
+  z-index: 99;
+}
+.menu-items li {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #627B23;
+  width: 100%;
+  padding: 10px 0;
+}
+input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+input[type="checkbox"]:checked ~ .hamburger .line1 {
+  transform: rotate(45deg);
+	background: #627B23;
+}
+input[type="checkbox"]:checked ~ .hamburger .line2 {
+	transform: scaleY(0);
+	background: #627B23;
+}
+input[type="checkbox"]:checked ~ .hamburger .line3 {
+	transform: rotate(-45deg);
+	background: #627B23;
+}
+
+/***********Finaliza el menu********************/
+
+
+.guia{
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  height: 50px;
+	width: 100%;
+	margin-top: 75px;
+}
+
+.guia a:hover{
+    background-color: #0099FF;
+}
+
+.guia input:focus{
+    background-color: #0099FF;
+}
+
+/**************Filtro********************/
+.productos h1{
+	text-align: center;
+	margin: 20px 0 15px 0;
+  
+
+}
+.seleccion button{
+  border: none;
+  background-color: #A2C944;
+  width: 125px;
+  height: 36px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 135px;
+  font-family: 'Nunito'  sans-serif;
+  font-size: 15px;
+  color:  #fff;
+  border-radius: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/***************Fin de filtro***************/
+
+/*************Lista de productos***********************/
+
+.catalogo{
+	font-family: 'Nunito' sans-serif;
+}
+
+.productos h2{
+  font-family: 'Nunito' sans-serif;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 15px;
+
+}
+
+.productos p{
+   font-family: 'Nunito' sans-serif;
+   font-size: 20px;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   padding-bottom: 15px;
+
+}
+
+.catalogo{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-radius: 3px;
+}
+
+.productos{
+	   width: 90%;
+	   position: relative;
+	   height: auto;
+	   margin-bottom: 5px;
+     border-radius: 46px;
+     padding: 0px;
+	   box-shadow: 0px 0px  3px 0px rgba(0,0,0, .75) ;
+}
+.productos  img{
+	width: 100%;
+	height: 100%;
+  border-radius: 46px;
+  padding: 30px;
+	object-fit: cover;
+}
+
+.productos button{
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 115px;
+  font-family: 'Nunito'  sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: #FE0000;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/*********boton de ver mas*****************/
+.ver-mas button{
+  border: none;
+  background-color: #A2C944;
+  width: 100px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 135px;
+  font-family: 'Nunito'  sans-serif;
+  font-size: 20px;
+  color:  #fff;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************Footer*************************/
+
+footer{
+  
+  font-size: 1em;
+  letter-spacing: 2px;
+  width: 100%;
+  height: auto; 
+  background: #000;
+  color: #fff;
+  bottom: 0;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes h2{
+  font-family: 'Nunito','Arial' sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+i {
+         font-size: 35px;
+         padding-left: 60px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+}
+
+i a{
+  letter-spacing: 30px;
+}
+
+.pie-pagina p{
+  font-family: 'Nunito','Arial' sans-serif;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.logoFinal{
+     width: 67px; 
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.derechos p{
+  font-family: 'Nunito','Arial' sans-serif;
+  font-size: 0.5em;
+  text-align: center;
+  line-height: 30px;
+  top: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+/******Finalizacion de footer***********/

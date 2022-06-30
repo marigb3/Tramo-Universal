@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+-----------------------
+Sitio: Tramo Universal
+Creadora: Mariela González 
+Actualizada: 30-junio-2022 8:24am
+Actualizado por: Mariela González
+------------------------
+
+Index para movil
+*/
+
+/*
+-------------------------
+Responsive para tablet
+------------------------*/
+
+ @media (width: 834px) {
+   .navbarMobile{
+       display: none;
+   }
+   
+}
+  
+
+
+	 
+

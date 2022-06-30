@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+
+body {
+  margin: 0;
+  box-sizing: border-box; 
+  padding: 0; 
+}
+
+a, ul, li, input{
+	text-decoration: none;
+	list-style: none;
+	color: black;
+	border: none;
+ }
+
+
+#container{
+
+	max-width: 1440px;
+	width: 300px;
+  overflow: hidden;
+
+}
+
+/* Navbar Mobile */
+.navbarMobile {
+    width: 100%;
+  }
+  .navbarMobile a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    color: white;
+  }
+  .navContainer {
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  #chk {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    z-index: 2;
+  }
+  .logoContainer {
+    display: block;
+    width: 92px;
+    height: 125px;
+  }
+  .logotipo {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 92px;
+    height: 125px;
+  }
+  .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #627B23;
+  }
+  .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in;
+  }
+  .line2 {
+    transition: transform 0.2s ease-in;
+  }
+  .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in;
+  }
+  .menu-items {
+    position: absolute;
+    top: 0;
+    background-color: #627B23;
+    color: white;
+    display: flex;
+      gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+  }
+  .menu-items li {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #627B23;
+    width: 100%;
+    padding: 10px 0;
+  }
+  input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  input[type="checkbox"]:checked ~ .hamburger .line1 {
+    transform: rotate(45deg);
+      background: #627B23;
+  }
+  input[type="checkbox"]:checked ~ .hamburger .line2 {
+      transform: scaleY(0);
+      background: #627B23;
+  }
+  input[type="checkbox"]:checked ~ .hamburger .line3 {
+      transform: rotate(-45deg);
+      background: #627B23;
+  }
+  
+  /***********Finaliza el menu********************/
+
+/************Imagen de inicio************************/
+
+.guia{
+ font-family: 'Nunito', sans-serif;
+ font-size: 15px;
+ padding: 10px;
+ margin-left: 5px;
+}
+
+.guia a:hover{
+    background-color: #0099FF;
+}
+
+.guia input:focus{
+    background-color: #0099FF;
+}
+
+/***********galeria**************/
+
+.galeria{
+	font-family: 'Nunito' sans-serif;
+}
+.galeria h1{
+	text-align: center;
+	margin: 20px 0 15px 0;
+  
+
+}
+.galeria p{
+   font-family: 'Nunito' sans-serif;
+   font-size: 15px;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   padding-bottom: 15px;
+
+}
+
+.contenedor-imagenes{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen{
+	   width: 90%;
+	   position: relative;
+	   height: auto;
+	   margin-bottom: 5px;
+     border-radius: 46px;
+     padding: 10px;
+	   box-shadow: 0px 0px  3px 0px rgba(0,0,0, .75) ;
+}
+.imagen img{
+	width: 100%;
+	height: 100%;
+  border-radius: 46px;
+  padding: 30px;
+	object-fit: cover;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #D9D9D9;
+	width: 100%;
+	height: 0;
+  overflow: hidden;
+  transition: 1s ease;
+  border-radius: 46px;
+}
+.overlay h2{
+  color: #000;
+  font-family: 'Nunito' sans-serif;
+  font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  transform: translate(-50%, -50% );
+  z-index: 80;
+
+}
+.imagen:hover .overlay{
+  height: 100%;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.imagen input:focus{
+  height: 100%;
+  opacity: 50%;
+  
+}
+
+/*********Footer******************/
+
+footer{
+  
+	font-size: 1em;
+	letter-spacing: 2px;
+	width: 100%;
+	height: auto; 
+	background: #000;
+	color: #fff;
+	bottom: 0;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .redes h2{
+	font-family: 'Nunito','Arial' sans-serif;
+	font-size: 25px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+  }
+
+
+  i {
+	letter-spacing: 70px;
+	margin-left: -20px;
+  font-size: 35px;
+  display: flex;
+  text-decoration: row;;
+  justify-content: center;
+
+	
+	
+}
+
+
+  
+  .pie-pagina p{
+	font-family: 'Nunito','Arial' sans-serif;
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   
+  }
+  
+  .logoFinal{
+	   width: 67px; 
+	  height: 80px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  
+  .derechos p{
+	font-family: 'Nunito','Arial' sans-serif;
+	font-size: 0.5em;
+	text-align: center;
+	line-height: 30px;
+	top: 5px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   
+  }
+  /******Finalizacion de footer***********/
