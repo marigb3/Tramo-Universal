@@ -50,7 +50,7 @@ body {
 .navContainer {
   width: 100%;
   margin: auto;
-  display: none;
+  display: block;
   position: relative;
   height: 60px;
 }
