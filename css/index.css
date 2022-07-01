@@ -86,7 +86,7 @@ body {
 /* Navbar Mobile */
 .navbarMobile {
   width: 100%;
-  z-index: 99;
+  
 }
 .navbarMobile a {
   font-weight: 500;
@@ -160,7 +160,7 @@ body {
   width: 100%;
   transform: translate(-150%);
   transition: transform 0.5s ease-in;
-  z-index: 99;
+  z-index: 110;
 }
 .menu-items li {
   text-transform: uppercase;
