@@ -32,7 +32,7 @@ body {
     max-width: 1440px;
     width: 360px;
     overflow: hidden;
-    display: flex;
+  
 }
 
 /* Navbar desktop
@@ -113,7 +113,7 @@ body {
   position: absolute;
   top: 40px;
   right: 55px;
-  z-index: 100;
+  z-index: 99;
 }
 .logoContainer {
   display: block;
@@ -160,7 +160,7 @@ body {
   width: 100%;
   transform: translate(-150%);
   transition: transform 0.5s ease-in;
-  z-index: 110;
+  z-index: 99;
 }
 .menu-items li {
   text-transform: uppercase;
@@ -195,6 +195,7 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
 	height: 272px;
 	width: 100%;
 	margin-top: 75px;
+  z-index: 80;
 }
 .aboveTheFold  button{
   border: none;
