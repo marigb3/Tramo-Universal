@@ -113,15 +113,16 @@ body {
   position: absolute;
   top: 40px;
   right: 55px;
-  z-index: 99;
+  z-index: 120;
 }
 .logoContainer {
   display: block;
   width: 92px;
   height: 125px;
+  z-index: 120;
 }
 .logotipo {
-  position: absolute;
+  position: relative;
   top: 5px;
   left: 20px;
   width: 151px;
