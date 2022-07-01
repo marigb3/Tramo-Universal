@@ -16,7 +16,7 @@ a, ul, li, input{
  }
 
  h2{
-   font-family: 'Nunito' sans-serif;
+   font-family: 'Nunito', sans-serif;
    
  }
 
@@ -167,7 +167,7 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 135px;
-  font-family: 'Nunito'  sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   color:  #fff;
   border-radius: 46px;
@@ -183,11 +183,11 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
 /*************Lista de productos***********************/
 
 .catalogo{
-	font-family: 'Nunito' sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 
 .productos h2{
-  font-family: 'Nunito' sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   text-align: center;
   top: 50%;
@@ -197,7 +197,7 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
 }
 
 .productos p{
-   font-family: 'Nunito' sans-serif;
+   font-family: 'Nunito', sans-serif;
    font-size: 20px;
    text-align: center;
    top: 50%;
@@ -241,7 +241,7 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
   height: 40px;
   margin-top: 20px;
   margin-left: 115px;
-  font-family: 'Nunito'  sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   color: #fff;
   background-color: #FE0000;
@@ -260,7 +260,7 @@ input[type="checkbox"]:checked ~ .hamburger .line3 {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 135px;
-  font-family: 'Nunito'  sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   color:  #fff;
   border-radius: 46px;
@@ -288,7 +288,7 @@ footer{
 }
 
 .redes h2{
-  font-family: 'Nunito','Arial' sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 25px;
   padding: 20px;
   display: flex;
@@ -308,7 +308,7 @@ i a{
 }
 
 .pie-pagina p{
-  font-family: 'Nunito','Arial' sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   text-align: center;
   line-height: 30px;
@@ -328,7 +328,7 @@ i a{
 }
 
 .derechos p{
-  font-family: 'Nunito','Arial' sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 0.5em;
   text-align: center;
   line-height: 30px;
