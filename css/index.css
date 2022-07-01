@@ -31,57 +31,9 @@ body {
 #container{
     max-width: 1440px;
     width: 360px;
-    overflow: hidden;
+   display: flex;
   
 }
-
-/* Navbar desktop
-.navbarDsktop {
-  height: 817px;
-  width: 75px;
-  background: #627B23;
-  font-size: 20px;
-  font-family: 'Nunito' sans-serif;
-  position: relative;
-  display: none;
-
-}
-
-.navbarDsktop {
-  padding: 0;
-  margin: 0 auto;
-  width:  582px;
-  height: 61px;
-}
-
-.navbarDsktop li {
-  display: inline;
-  float: right;
-}
-
-.navbarDsktop a {
-  color: #fff;
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 40px;
-  
-}
-
-.navbarDsktop li a {
-  border-radius: 46px;
-  -moz-box-sizing-sizing:border-box;
-  -webkit-box-sizing:border-box;
-}
-
-.navbarDsktop li:last-child a {
-    border-right: 0;
-}
-
-.navbarDsktop a.navContainer {
-     display: none;
-}*/
 
 /* Navbar Mobile */
 .navbarMobile {
@@ -97,7 +49,7 @@ body {
 .navContainer {
   width: 100%;
   margin: auto;
-  display: block;
+  display: none;
   position: relative;
   height: 60px;
 }
