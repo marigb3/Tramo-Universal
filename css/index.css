@@ -31,7 +31,6 @@ body {
 #container{
     max-width: 1440px;
     width: 360px;
-    height: auto;
     overflow: hidden;
   
 }
@@ -128,15 +127,15 @@ input[type="checkbox"]:checked ~ .menu-items {
 }
 input[type="checkbox"]:checked ~ .hamburger .line1 {
   transform: rotate(45deg);
-	background: #627B23;
+	background: #000;
 }
 input[type="checkbox"]:checked ~ .hamburger .line2 {
 	transform: scaleY(0);
-	background: #627B23;
+	background: #000;
 }
 input[type="checkbox"]:checked ~ .hamburger .line3 {
 	transform: rotate(-45deg);
-	background: #627B23;
+	background: #000;
 }
 
 /***********Finaliza el menu********************/
