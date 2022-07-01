@@ -45,7 +45,7 @@ body {
     overflow: hidden;
 }
 
-/* Navbar desktop*/
+/* Navbar desktop
 .navbarDsktop {
   height: 817px;
   width: 75px;
@@ -91,7 +91,7 @@ body {
 
 .navbarDsktop a.navContainer {
      display: none;
-}
+}*/
 
 /* Navbar Mobile */
 .navbarMobile {

@@ -14,7 +14,7 @@ Index para movil
 /*
 -------------------------
 Responsive para tablet
-------------------------*/
+------------------------
 
 @media screen 
   and (max-device-width: 1440px)
@@ -163,7 +163,7 @@ Responsive para tablet
 
   }  
 
-    /****Formulario*****/
+    ****Formulario*****
 form{
 	display: flex;
 	flex-direction: column;
@@ -222,9 +222,9 @@ form button{
 	
 }
 
-/****Finalización formulario*****/
+***Finalización formulario****
 
-/******Footer***********/
+*****Footer***********
 
 footer{
   
@@ -293,9 +293,9 @@ i {
   align-items: center;
  
 }
-/******Finalizacion de footer***********/
+*****Finalizacion de footer**********
 
-}
+
 
 
 @media 
@@ -417,7 +417,7 @@ justify-content: center;
 
 }  
 
- /****Formulario*****/
+ ****Formulario****
 form{
 display: flex;
 flex-direction: column;
@@ -476,9 +476,9 @@ margin-left: 150px;
 
 }
 
-/****Finalización formulario*****/
+***Finalización formulario*****
 
-/******Footer***********/
+*****Footer***********
 
 footer{
 
@@ -547,12 +547,12 @@ justify-content: center;
 align-items: center;
 
 }
-/******Finalizacion de footer***********/
+*****Finalizacion de footer***********/
 
        
     
 
-  }
+  
 
 
 
