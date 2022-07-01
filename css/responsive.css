@@ -16,14 +16,547 @@ Index para movil
 Responsive para tablet
 ------------------------*/
 
- @media (width: 834px) {
-   .navbarMobile{
-       display: none;
+@media screen 
+  and (max-device-width: 1440px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+    
+    #container{
+      overflow: hidden;
+    }
+    .navbarMobile{
+      display: none;
+    }
+
+    .navbarDsktop {
+
+      height: auto;
+      background-color: #627B23;
+      font-family: 'Nunito' sans-serif;
+      font-size: 25px; 
+     }
+     nav ul {
+      width: 100%;
+      display: block;
+      height: auto;
+   }
+  
+   .navbarDsktop li {
+      width: 50%;
+      float: right;
+      position: relative;
    }
    
-}
-  
+   .navbarDsktop li a {
+     border-bottom: 1px solid #627B23;
+     border-right:  1px solid #627B23;
+   }
 
+    .navbarDsktop a {
+    text-align: center;
+    width: 100%;
+    text-indent: 25px;
+   }
+     .Logotipo {
+        background-image: url(../imagenes/logoDesktop.svg);
+        width: 151px;
+        height: 205px;
+      
+     }
+
+     .aboveTheFold{
+      background-image: url("../imagenes/portada.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 726px;
+      width: 100%;
+      margin-top: 75px;
+      border-radius: 46px;
+    }
+    .aboveTheFold  button{
+      border: none;
+      background-color: #627B23;
+      margin-left: 200px;
+      margin-top: 100px;
+      font-family: 'Nunito' sans-serif;
+      font-size: 20px;
+      padding: 10px 5px;
+      border-radius: 35px;
+      letter-spacing: 1px;
+      z-index: 90;
+      
+    }
+    .aboveTheFold  button a{
+      color: white;
+    } 
+
+
+    #divisiones .categoria {
+           padding: 10px;
+           width: 100%;
+           display: grid;
+           grid-row: 1 / 3;
+           grid-column: 2 / 3;
+           
+
+    }
+    #divisiones .categoria img{
+      width: 278px;
+      height: 191px;
+      padding: 20px;
+      margin-left: 85px;
+      border-radius: 46px;
+ }
+
+ 
+
+
+.oferta {
+  background-image: url(../imagenes/ofertadDesktop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;  
+    
+}
+
+.especial{
+  width: 100%;
+  padding-left: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.temporada .mandarina{
+      width: 228px;
+      height: 144px;
+      border-radius: 46px;
+      display: grid;
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+      justify-content: center;
+}
+.temporada h2{
+      font-family: 'Nunito' sans-serif;
+      text-align: center;
+      font-size: 1.2em;
+      margin-right: 50px;
+      padding: 20px;
+}
+
+
+.ideas h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.ideas .batido{
+  width: 228px;
+  height: auto;
+  border-radius: 46px;
+   display: flex;
+  justify-content: center;
+
+  }  
+
+    /****Formulario*****/
+form{
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+	width: 100%;
+	max-width: 1440px;
+	border-radius: 46px;
+}
+
+form h1 {
+	color: #000;
+  font-family: 'Nunito' sans-serif;
+  font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+}
+
+form h3{
+	color: #627B23;
+  font-size: 15px;
+	 right: 40px;
+   font-family: 'Nunito' sans-serif;
+   
+}
+
+form input, form textarea{
+	width: 479px;
+	height: 102px;
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: #B8CF81;
+	font-size: 20px;
+	border-radius: px;
+
+}
+
+form button{
+	padding: 10px;
+	background: #CC0000;
+	color: #fff;
+  text-align: center;
+	font-size: 15px;
+	border: 0;
+	border-radius: 49px;
+	outline: none;
+	cursor: pointer;
+	width: 251px;
+	height: 110px;
+  margin-left: 150px;
+	
+}
+
+/****Finalización formulario*****/
+
+/******Footer***********/
+
+footer{
+  
+  font-size: 1em;
+  letter-spacing: 2px;
+  width: 100%;
+  height: auto; 
+  background: #000;
+  color: #fff;
+  bottom: 0;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes h2{
+  font-family: 'Nunito','Arial' sans-serif;
+  font-size: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+i {
+         font-size: 40px;
+         padding-left: 70px;
+         letter-spacing: 30px;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+}
+
+
+.pie-pagina p{
+  font-family: 'Nunito','Arial' sans-serif;
+  font-size: 15px;
+  text-align: left;
+  line-height: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+ 
+}
+
+.logoFinal{
+    margin-right: 5px;
+    width: 350px; 
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+.derechos p{
+  font-family: 'Nunito','Arial' sans-serif;
+  font-size: 2em;
+  text-align: center;
+  line-height: 30px;
+  top: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+/******Finalizacion de footer***********/
+
+}
+
+
+@media 
+  (max-device-width: 834px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+    #container{
+      overflow: hidden;
+    }
+
+    .navbarMobile{
+      display: none;
+    }
+      .Logotipo {
+        background-image: url(../imagenes/logoTablet.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 151px;
+        height: 205px;
+       }
+    
+       .aboveTheFold{
+        background-image: url("../imagenes/portada.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 425px;
+        width: 100%;
+        margin-top: 75px;
+        border-radius: 46px;
+      }
+      .aboveTheFold  button{
+        border: none;
+        background-color: #627B23;
+        margin-left: 200px;
+        margin-top: 100px;
+        font-family: 'Nunito' sans-serif;
+        font-size: 15px;
+        padding: 10px 5px;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        z-index: 90;
+        
+      }
+      .aboveTheFold  button a{
+        color: white;
+      
+      }
+    
+      #divisiones .categoria {
+        padding: 89px;
+        width: 100%;
+        display: grid;
+        grid-row: 2;
+        grid-column: 2 ;
+        
+
+ }
+ #divisiones .categoria img{
+   width: 250px;
+   height: 191px;
+   padding: 20px;
+   margin-left: 85px;
+   border-radius: 46px;
+}
+
+
+
+
+.oferta {
+background-image: url(../imagenes/ofertadDesktop.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+width: 100%;
+height: 318px;
+display: flex;
+justify-content: center; 
+align-items: center; 
+ 
+}
+
+.especial{
+width: 100%;
+padding-left: 50px;
+display: flex;
+justify-content: center;
+
+}
+.temporada .mandarina{
+   width: 383px;
+   height: 291px;
+   border-radius: 46px;
+   display: grid;
+   grid-row: 1 / 3;
+   grid-column: 2 / 3;
+   justify-content: center;
+}
+.temporada h2{
+   font-family: 'Nunito' sans-serif;
+   text-align: center;
+   font-size: 2em;
+   margin-right: 60px;
+   padding: 30px;
+}
+
+
+.ideas h2{
+ text-align: center;
+ font-size: 2em;
+ margin-right: 60px;
+ padding: 30px;
+}
+
+.ideas .batido{
+width: 228px;
+height: auto;
+border-radius: 46px;
+display: flex;
+justify-content: center;
+
+}  
+
+ /****Formulario*****/
+form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+padding: 50px;
+width: 100%;
+max-width: 1440px;
+border-radius: 46px;
+}
+
+form h1 {
+color: #000;
+font-family: 'Nunito' sans-serif;
+font-size: 2em;
+font-weight: 400;
+margin-bottom: 20px;
+display: flex;
+text-align: center;
+}
+
+form h3{
+color: #627B23;
+font-size: 15px;
+right: 40px;
+font-family: 'Nunito' sans-serif;
+
+}
+
+form input, form textarea{
+width: 336px;
+height: 74px;
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: #B8CF81;
+font-size: 20px;
+border-radius: px;
+
+}
+
+form button{
+padding: 10px;
+background: #CC0000;
+color: #fff;
+text-align: center;
+font-size: 20px;
+border: 0;
+border-radius: 49px;
+outline: none;
+cursor: pointer;
+width: 186px;
+height: 73px;
+margin-left: 150px;
+
+}
+
+/****Finalización formulario*****/
+
+/******Footer***********/
+
+footer{
+
+font-size: 1em;
+letter-spacing: 2px;
+width: 100%;
+height: auto; 
+background: #000;
+color: #fff;
+bottom: 0;
+padding-left: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.redes h2{
+font-family: 'Nunito','Arial' sans-serif;
+font-size: 30px;
+padding: 25px;
+display: flex;
+justify-content: center;
+}
+i {
+      font-size: 40px;
+      padding-left: 70px;
+      letter-spacing: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.pie-pagina p{
+font-family: 'Nunito','Arial' sans-serif;
+font-size: 13px;
+text-align: left;
+line-height: 25px;
+margin-left: 20px;
+display: flex;
+justify-content: center;
+align-items: left;
+
+}
+
+.logoFinal{
+ margin-right: 5px;
+ width: 298px; 
+ height: 404px;
+ display: flex;
+ justify-content: center;
+ align-items: right;
+}
+
+.derechos p{
+font-family: 'Nunito','Arial' sans-serif;
+font-size: 1.8em;
+text-align: center;
+line-height: 30px;
+top: 5px;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+/******Finalizacion de footer***********/
+
+       
+    
+
+  }
+
+
+
+ 
 
 	 
 
